@@ -10,14 +10,19 @@ const Navigations = () => (
   <>
     <img
       className="Logo"
-      src="./assets/spaceshiplogo.png"
+      src="../assets/spaceshiplogo.png"
       alt="Logo"
       style={{ width: '50px' }}
     />
     <h3>Space Travellers&apos; Hub</h3>
-    <ul className="Lists-style" style={{ justifyContent: 'flex-end', flex: '2' }}>
+    <ul
+      className="Lists-style"
+      style={{
+        display: 'flex', justifyContent: 'flex-end', gap: '20px', flex: '2',
+      }}
+    >
       {links.map((link) => (
-        <li key={link.text} className="mappedlinks">
+        <li key={link.text} className="mappedlinks" style={{ listStyle: 'none' }}>
           <NavLink className={({ isActive }) => (isActive ? 'active-link' : 'link')} to={link.path}>
             {link.text}
           </NavLink>
