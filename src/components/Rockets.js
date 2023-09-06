@@ -25,7 +25,7 @@ const RocketList = () => {
         {RocketList.map((item) => (
           <Rocket
             key={item.id}
-            id={item.id}
+            // id={item.id}
             name={item.name}
             description={
               item.reserved ? (
@@ -66,6 +66,9 @@ const Rocket = (props) => {
     {
       id, name, description, image, Reservation, reservationState,
     } = props;
+  const handleReservesClick = () => {
+    dispatch(reservation(Reservation));
+  };
     /* eslint-disable */
   return (
     <div className="rocket1" key={id}>
@@ -75,8 +78,12 @@ const Rocket = (props) => {
         <div className="rocketDesctext">{description}</div>
         <div
           type="button"
-          onClick={() => {
-            dispatch(reservation(Reservation));
+          tabIndex="0"
+          onClick={handleReservesClick}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              handleReservesClick();
+            }
           }}
         >
           {reservationState}
