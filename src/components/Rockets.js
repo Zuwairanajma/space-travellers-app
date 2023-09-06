@@ -1,7 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { fetchAPI } from '../redux/rocketSlice';
+import { fetchAPI, reservation } from '../redux/rocketSlice';
+import '../styles/rockets.css';
 
 const RocketList = () => {
   // console.log('Dispatching fetchAPI action');
@@ -26,8 +27,30 @@ const RocketList = () => {
             key={item.id}
             id={item.id}
             name={item.name}
-            description={item.description}
-            images={item.flickr_images}
+            description={
+              item.reserved ? (
+                <div>
+                  <span className="reserved">Reserved</span>
+                  {item.description}
+                </div>
+              ) : (
+                item.description
+              )
+
+            }
+            image={item.images}
+            Reservation={item.id}
+            reservationState={
+              item.reserved ? (
+                <button type="button" className="Reservation-revoked">
+                  Cancel Reservation
+                </button>
+              ) : (
+                <button type="button" className="Reservation">
+                  Reserve rocket
+                </button>
+              )
+            }
           />
         ))}
       </div>
@@ -38,18 +61,29 @@ const RocketList = () => {
 };
 
 const Rocket = (props) => {
+  const dispatch = useDispatch();
   const
     {
-      id, name, description, images,
+      id, name, description, image, Reservation, reservationState,
     } = props;
+    /* eslint-disable */
   return (
     <div className="rocket1" key={id}>
-      <img className="rocketlook" src={images[1]} alt={name} />
+      <img className="rocketlook" src={image} alt={name} />
       <div className="contentsA">
         <h4 className="rocketName">{name}</h4>
         <div className="rocketDesctext">{description}</div>
+        <div
+          type="button"
+          onClick={() => {
+            dispatch(reservation(Reservation));
+          }}
+        >
+          {reservationState}
+        </div>
       </div>
     </div>
+    /* eslint-enable */
   );
 };
 
@@ -57,7 +91,9 @@ Rocket.propTypes = {
   id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+  image: PropTypes.arrayOf(PropTypes.string).isRequired,
+  Reservation: PropTypes.number.isRequired,
+  reservationState: PropTypes.number.isRequired,
 };
 
 export default RocketList;
