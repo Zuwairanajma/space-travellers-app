@@ -12,8 +12,10 @@ const RocketList = () => {
   );
 
   useEffect(() => {
-    dispatch(fetchAPI());
-  }, [dispatch]);
+    if (RocketList.length === 0) {
+      dispatch(fetchAPI());
+    }
+  }, [dispatch, RocketList.length]);
 
   if (isLoading === true) {
     return <div>Loading...</div>;
@@ -100,7 +102,7 @@ Rocket.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.arrayOf(PropTypes.string).isRequired,
   Reservation: PropTypes.number.isRequired,
-  reservationState: PropTypes.number.isRequired,
+  reservationState: PropTypes.string.isRequired,
 };
 
 export default RocketList;

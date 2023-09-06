@@ -42,3 +42,23 @@
   text-align: center;
   border-radius: 5px;
 }
+
+.active {
+  color: red;
+}
+
+.m-2 {
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+.Logo {
+  width: 50px;
+}
