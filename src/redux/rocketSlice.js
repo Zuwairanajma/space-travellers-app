@@ -1,16 +1,17 @@
 /* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+// import axios from 'axios';
 
 const url = 'https://api.spacexdata.com/v4/rockets';
 
 export const fetchAPI = createAsyncThunk('rockets/fetchRocket', async () => {
   try {
-    const response = await axios.get(url);
+    const response = await fetch(url);
     // console.log('API Data:', response.data);
-    return response.data;
-  } catch (err) {
-    throw new Error(err.message);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    throw new Error('Failed to retrieve data');
   }
 });
 
