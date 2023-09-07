@@ -1,16 +1,14 @@
-/* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const url = 'https://api.spacexdata.com/v4/rockets';
+const url = 'https://api.spacexdata.com/v3/rockets';
 
-export const fetchAPI = createAsyncThunk('rockets/fetchRocket', async () => {
+export const fetchAPI = createAsyncThunk('Rockets/fetchRocket', async () => {
   try {
     const response = await axios.get(url);
-    // console.log('API Data:', response.data);
     return response.data;
   } catch (err) {
-    throw new Error(err.message);
+    return err.message;
   }
 });
 
@@ -51,7 +49,7 @@ const rocketsSlice = createSlice({
           newRocket = {
             id: item.id,
             name: item.rocket_name,
-            description: item.description,
+            disc: item.description,
             images: item.flickr_images[1],
             reserved: false,
           };
@@ -63,6 +61,7 @@ const rocketsSlice = createSlice({
       .addCase(fetchAPI.rejected, (state, action) => {
         state.isLoading = false;
         state.RocketList = [];
+
         state.error = action.error.message;
       });
   },

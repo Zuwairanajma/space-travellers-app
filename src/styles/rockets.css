@@ -42,3 +42,54 @@
   text-align: center;
   border-radius: 5px;
 }
+
+/* profile */
+.active {
+  color: red;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+.Nav-start {
+  display: flex;
+}
+
+.parent-header {
+  align-items: center;
+  display: flex;
+  margin: 20px 50px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.logo {
+  width: 50px;
+}
+
+section {
+  align-items: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 40px;
+}
+
+.profile-list {
+  border: 1px solid lightgray;
+  height: 100%;
+  width: 65rem;
+}
+
+.profile-list li {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+  margin: 7px;
+}
