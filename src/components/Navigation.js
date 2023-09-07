@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/rockets.css';
 import logo from '../assets/spaceshiplogo.png';
+
 const links = [
   { path: '/', text: 'Rockets' },
   { path: '/Mission', text: 'Mission' },
