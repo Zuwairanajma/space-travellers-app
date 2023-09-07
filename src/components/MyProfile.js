@@ -1,37 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-const Rocket = () => {
-  const rockets = useSelector((state) => state.rockets);
-
-  const myRockets = rockets.RocketList.filter(
-    (rocket) => rocket.reserved === true,
-  );
-  if (myRockets.length === 0) {
-    return (
-      <table>
-        <tr>
-          <td>My Rockets </td>
-        </tr>
-        <tr>
-          <td>You have not reserved any rockets.</td>
-        </tr>
-      </table>
-    );
-  }
-  return (
-    <table>
-      <tr><th>My Rockets</th></tr>
-      <ul>
-        {myRockets.map((rocket) => (
-          <li key={rocket.id}>
-            {rocket.name}
-          </li>
-        ))}
-      </ul>
-    </table>
-  );
-};
 const Mission = () => {
   const { missions } = useSelector((store) => store.missions);
 
@@ -68,7 +37,6 @@ function MyProfile() {
   return (
     <div>
       <Mission />
-      <Rocket />
     </div>
   );
 }
