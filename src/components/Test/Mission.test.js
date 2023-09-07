@@ -14,7 +14,7 @@ describe('Mission Component', () => {
           {
             id: 1,
             name: 'Mission 1',
-            desc: 'Description 1',
+            desce: 'Description 1',
             reserved: true,
           },
         ],
