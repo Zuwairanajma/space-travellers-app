@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import '../styles/rockets.css';
 
@@ -16,7 +16,7 @@ const Rocket = () => {
   return (
     <section>
       <h3>My Rockets</h3>
-      <ol>
+      <ol className="profile-list">
         {myRockets.map((rocket) => (
           <li key={rocket.id}>{rocket.name}</li>
         ))}
