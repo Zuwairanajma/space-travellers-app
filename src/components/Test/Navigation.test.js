@@ -1,12 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import Nav from '../Nav';
+import Navigations from '../Navigation';
 
-test('Nav component matches snapshot', () => {
+test('Navigations component matches snapshot', () => {
   const { asFragment } = render(
     <MemoryRouter>
-      <Nav />
+      <Navigations />
     </MemoryRouter>,
   );
   expect(asFragment()).toMatchSnapshot();

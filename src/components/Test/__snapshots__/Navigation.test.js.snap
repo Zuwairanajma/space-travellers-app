@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigations component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="parent-header"
+  >
+    <nav
+      class="Nav-start"
+    >
+      <img
+        alt="Logo"
+        class="Logo"
+        src="spaceshiplogo.png"
+        style="width: 60px;"
+      />
+      <h2>
+        Space Travellers' Hub
+      </h2>
+    </nav>
+    <ul
+      class="lists-style"
+      style="display: flex; justify-content: flex-end; gap: 20px; flex: 3;"
+    >
+      <li
+        class="mappedlinks"
+        style="list-style: none;"
+      >
+        <a
+          aria-current="page"
+          class="active-link"
+          href="/"
+        >
+          Rockets
+        </a>
+      </li>
+      <li
+        class="mappedlinks"
+        style="list-style: none;"
+      >
+        <a
+          class="link"
+          href="/Mission"
+        >
+          Mission
+        </a>
+      </li>
+      <li
+        class="mappedlinks"
+        style="list-style: none;"
+      >
+        <a
+          class="link"
+          href="/MyProfile"
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Navigations component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="parent-header"
+  >
+    <nav
+      class="Nav-start"
+    >
+      <img
+        alt="Logo"
+        class="Logo"
+        src="spaceshiplogo.png"
+        style="width: 60px;"
+      />
+      <h2>
+        Space Travellers' Hub
+      </h2>
+    </nav>
+    <ul
+      class="lists-style"
+      style="display: flex; justify-content: flex-end; gap: 20px; flex: 3;"
+    >
+      <li
+        class="mappedlinks"
+        style="list-style: none;"
+      >
+        <a
+          aria-current="page"
+          class="active-link"
+          href="/"
+        >
+          Rockets
+        </a>
+      </li>
+      <li
+        class="mappedlinks"
+        style="list-style: none;"
+      >
+        <a
+          class="link"
+          href="/Mission"
+        >
+          Mission
+        </a>
+      </li>
+      <li
+        class="mappedlinks"
+        style="list-style: none;"
+      >
+        <a
+          class="link"
+          href="/MyProfile"
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
