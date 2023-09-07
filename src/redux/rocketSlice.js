@@ -1,6 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-// import axios from 'axios';
+import axios from 'axios';
 
 const url = 'https://api.spacexdata.com/v4/rockets';
 
