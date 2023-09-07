@@ -33,5 +33,3 @@ const Navigations = () => (
 );
 
 export default Navigations;
-
-// C:\Users\USER\Desktop\space-travellers-app\src\spaceshiplogo.png
