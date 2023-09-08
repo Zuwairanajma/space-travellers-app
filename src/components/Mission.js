@@ -136,14 +136,19 @@ const Mission = () => {
   ));
 
   return (
-    <section className="m-3 mt-0 p-3 pt-0 table-responsive">
-      <table className="table table-striped table-bordered">
+    <section className="m-4 mt-0 p-3 pt-0 table-responsive">
+      <table
+        className="table table-striped table-bordered"
+        style={{
+          width: '98%', justifyContent: 'center', marginLeft: '10px', marginRight: '6px', marginTop: '10px',
+        }}
+      >
         <thead>
           <tr>
             <th width="150">Mission</th>
             <th className="Mission-desc">Description</th>
-            <th width="150">Status</th>
-            <th width="150"> </th>
+            <th width="145">Status</th>
+            <th width="145"> </th>
           </tr>
         </thead>
         <tbody>

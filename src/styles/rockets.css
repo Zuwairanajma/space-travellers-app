@@ -1,7 +1,7 @@
 .rocket1 {
   display: flex;
   margin: 10px;
-  margin-left: 70px;
+  margin-left: 10px;
 }
 
 .rocketlook {
@@ -63,7 +63,7 @@
 .parent-header {
   align-items: center;
   display: flex;
-  margin: 20px 50px;
+  margin: 40px 50px;
 }
 
 h2 {

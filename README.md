@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Space Travelers' Hub Project</b></h3>
+  <h3><b>Space Travelers' App Project</b></h3>
 
 </div>
 
@@ -115,12 +115,11 @@ npm start
 - LinkedIn: [Zuwaira Sadiq](https://www.linkedin.com/in/zuwaira-sadiq-566b891b0?)
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Nweneary Uzochukwu Winnie**
+👤 **Aster Alemu**
 
-- GitHub: [Wineshuga](https://github.com/wineshuga)
-- Twitter: [Wineshuga](https://twitter.com/wineshuga)
-- LinkedIn: [Nweneary Uzochukwu Winnie](https://linkedin.com/in/wineshuga)
-
+- GitHub: https://github.com/aster-alemu
+- Twitter: https://twitter.com/home
+- LinkedIn: https://www.linkedin.com/in/aster-alemu-5a62a5211/
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
