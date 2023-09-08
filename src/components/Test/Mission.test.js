@@ -3,6 +3,7 @@ import { Provider } from 'react-redux';
 import '@testing-library/jest-dom/extend-expect';
 import configureStore from 'redux-mock-store';
 import Mission from '../Mission';
+
 const mockStore = configureStore([]);
 describe('Mission Component', () => {
   it('renders mission information from the store', () => {
