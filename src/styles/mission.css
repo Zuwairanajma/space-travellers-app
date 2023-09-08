@@ -1,0 +1,24 @@
+.Mission-desc {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn {
+  width: 140px;
+  font-size: 15px;
+  background-color: rgb(94, 87, 87);
+  height: 40px;
+  color: white;
+  border: 1px solid transparent;
+  text-align: center;
+  display: flex;
+}
+
+.btns {
+  border: 1px solid darkgray;
+  width: 140px;
+  font-size: 15px;
+  background-color: rgb(240, 236, 236);
+  height: 40px;
+  color: black;
+}

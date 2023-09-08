@@ -1,0 +1,95 @@
+.rocket1 {
+  display: flex;
+  margin: 10px;
+  margin-left: 10px;
+}
+
+.rocketlook {
+  width: 280px;
+}
+
+.contentsA {
+  padding-right: 50px;
+  margin-left: 15px;
+}
+
+.Reservation-revoked {
+  height: 35px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(119, 119, 119);
+  margin-top: 30px;
+  border-radius: 8%;
+  border: solid gray 2px;
+}
+
+.Reservation {
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  border: solid #007bff 2px;
+  height: 35px;
+  margin-top: 30px;
+  border-radius: 8%;
+}
+
+.rocketDesctext {
+  font-size: large;
+}
+
+.reserved {
+  background-color: #18a2b8;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* profile */
+.active {
+  color: red;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+.Nav-start {
+  display: flex;
+}
+
+.parent-header {
+  align-items: center;
+  display: flex;
+  margin: 40px 50px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.logo {
+  width: 50px;
+}
+
+section {
+  align-items: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 40px;
+}
+
+.profile-list {
+  border: 1px solid lightgray;
+  height: 100%;
+  width: 65rem;
+}
+
+.profile-list li {
+  border-bottom: 1px solid lightgray;
+  height: 40px;
+  margin: 7px;
+}

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile Component renders My Missions section correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      >
+        <h3>
+          My Missions
+        </h3>
+        <ol
+          class="list-group"
+        >
+          <li
+            class="list-group-item"
+          >
+            Mission 1
+          </li>
+        </ol>
+      </div>
+      <div
+        class="col"
+      >
+        <h3>
+          My Rockets
+        </h3>
+        You have not reserved any rockets.
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`MyProfile Component renders My Rockets section correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col"
+      >
+        <h3>
+          My Missions
+        </h3>
+        <p>
+          You have not reserved any missions.
+        </p>
+      </div>
+      <div
+        class="col"
+      >
+        <h3>
+          My Rockets
+        </h3>
+        <ol
+          class="list-group"
+        >
+          <li
+            class="list-group-item"
+          >
+            Rocket 1
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
